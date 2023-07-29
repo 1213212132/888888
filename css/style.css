@@ -1,0 +1,534 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+
+}
+
+.header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100rem;
+}
+
+
+.header .logo {
+    display: block;
+    width: 180rem;
+    height: 44rem;
+    background: url(../images/logo_w.svg) no-repeat;
+    transition: 0.5s;
+}
+
+.header.on .logo {
+    background: url(../images/) no-repeat;
+}
+
+.header .gnb {}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 40rem;
+}
+
+.header .gnb>ul>li>a {
+    display: block;
+    font-size: 20rem;
+    color: #fff;
+}
+
+.header .gnb>ul>li {
+    position: relative;
+    line-height: 100rem;
+}
+
+.header .gnb>ul>li::after {
+    content: "";
+    position: absolute;
+    bottom: 10rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 0;
+    height: 3rem;
+    background: #be161e;
+}
+
+.header .gnb>ul>li:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.header .gnb>ul>li .snb {
+    position: absolute;
+    top: 100rem;
+    left: -40rem;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 10rem 40rem 30rem 40rem;
+
+    display: none;
+}
+
+.header .gnb>ul>li:hover .snb {
+    display: block;
+}
+
+.header .gnb>ul>li .snb a {
+    display: block;
+    color: #fff;
+    font-size: 15rem;
+    line-height: 30rem;
+}
+
+.header .login {
+    display: flex;
+    gap: 30rem;
+}
+
+.header .login a {
+    font-size: 15rem;
+    color: #fff;
+}
+
+.hd__ham__btn {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.ham_btn,
+.ham_btn span {
+    display: inline-block;
+    transition: all .4s;
+    box-sizing: border-box;
+}
+
+.ham_btn {
+    position: relative;
+    width: 28rem;
+    height: 22rem;
+}
+
+.ham_btn span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+    background-color: #fff;
+    border-radius: 10rem;
+}
+
+.ham_btn span:nth-of-type(1) {
+    top: 0;
+}
+
+.ham_btn span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 65%;
+    left: auto;
+    right: 0;
+}
+
+.ham_btn span:nth-of-type(3) {
+    bottom: 0;
+}
+
+
+
+
+
+
+.ham_btn.on span:nth-of-type(1) {
+    -webkit-transform: translateY(12rem) rotate(-45deg);
+    transform: translateY(12rem) rotate(-45deg);
+}
+
+.ham_btn.on span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.ham_btn.on span:nth-of-type(3) {
+    -webkit-transform: translateY(-8rem) rotate(45deg);
+    transform: translateY(-8rem) rotate(45deg);
+}
+
+
+
+
+
+/*비디오*/
+
+.visual_step_box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0rem;
+    left: 0;
+}
+
+
+
+.video_text_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+}
+
+.video_text_box .video_text {
+    font-size: 48rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 1.2;
+}
+
+.video_text_box .video_text span {
+    display: block;
+}
+
+.video_text_box .video_text span:nth-child(3) {
+    font-size: 72rem;
+    background: linear-gradient(to right, #92DAFF, #B3B5FE);
+    color: rgba(0, 0, 0, 0);
+    -webkit-background-clip: text;
+    display: inline-block;
+    margin-top: 20rem;
+}
+
+
+.video_bg {
+    width: 100%;
+    height: 99.9%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+    height: 100vh;
+}
+
+.video_bg video {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000%;
+    height: 48.25vw;
+    min-height: 120%;
+    min-width: 177.77vh;
+    top: 50%;
+}
+
+
+/*비디오*/
+
+
+.space_visual {
+    width: 100%;
+    height: 1200rem;
+    filter: blur(0rem) brightness(1);
+}
+
+
+.space_visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/*로테이션 구현*/
+
+.eclipse_box {
+    width: 100%;
+    height: 100%;
+}
+
+.eclipse_action_box {
+    position: absolute;
+    width: 768rem;
+    height: 768rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s ease-out;
+}
+
+.eclipse_action_box img {
+    width: 100%;
+    animation: rotate_image 60s linear infinite;
+    transform-origin: 50% 50%;
+    position: absolute;
+}
+
+.eclipse_action_box img:nth-child(3) {
+    animation: rotate_image 60s linear infinite reverse;
+}
+
+@keyframes rotate_image {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+
+.eclipse_text_box {
+
+
+    position: absolute;
+    width: 768rem;
+    height: 768rem;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 50rem;
+    transition: 0.2s ease-out;
+}
+
+
+
+.eclipse_title {
+    position: relative;
+    top: -120rem;
+    font-size: 38rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.27;
+}
+
+.eclipse_text {
+
+    display: none;
+    /*나중에 반응형*/
+    font-size: 20rem;
+    font-weight: 400;
+    color: #DDDDDD;
+    line-height: 1.55;
+    position: relative;
+
+}
+
+
+.eclipse_box .scrolldown_icon {}
+
+.eclipse_box .scrolldown_icon .chevron {
+    pointer-events: none;
+    position: absolute;
+    bottom: 190rem;
+    width: 18rem;
+    left: 50%;
+    opacity: 1;
+    transform: translateX(-50%);
+    animation: move 3s ease-out infinite;
+}
+
+.eclipse_box .scrolldown_icon .chevron img {
+
+    width: 100%;
+}
+
+.eclipse_box .scrolldown_icon .chevron:first-child {
+    animation: move 2s ease-out 0s infinite;
+}
+
+.eclipse_box .scrolldown_icon .chevron:nth-child(2) {
+    animation: move 2s ease-out 1s infinite;
+    opacity: 0;
+}
+
+
+@keyframes move {
+    25% {
+        opacity: 1;
+
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate(-50%, 15px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, 30px);
+    }
+}
+
+.eclipse_text span.sb {
+    font-weight: 600;
+    color: #fff;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}
+
+
+/*sss*/
+
+.space_list {
+    position: relative;
+    top: -2rem;
+}
+
+.space_list .bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.space_list .title_box {
+    position: relative;
+    text-align: center;
+    bottom: 900rem;
+}
+
+.space_list .space_tit {
+
+    font-size: 20px;
+    font-weight: 600;
+    color: #A58EE0;
+    padding-bottom: 14px;
+    line-height: 1.5;
+}
+
+
+.space_list .space_txt {
+    color: #fff;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.35;
+    word-break: keep-all;
+}
+
+.space_list .space_txt2 {
+    color: #dddddd;
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 30px;
+    line-height: 1.5;
+
+}
+
+.visual_picture .img_box {}
+
+.visual_picture .img_box01 img {
+    position: absolute;
+    border-radius: 50%;
+    width: 15%;
+    top: 400rem;
+    right: 780rem;
+
+}
+
+.visual_picture .img_box02 img {
+    position: absolute;
+    border-radius: 50%;
+    width: 5%;
+    top: 400rem;
+    left: 500rem;
+    animation: rotate_image_main 24s linear infinite;
+}
+
+.visual_picture .img_box03 img {
+    position: absolute;
+    border-radius: 50%;
+    width: 10%;
+    top: 400rem;
+
+
+}
+
+
+.visual_picture .img_box04 img {
+    position: absolute;
+    border-radius: 50%;
+    width: 8%;
+    top: 630rem;
+    left: 500rem;
+    animation: rotate_image_main 24s linear infinite;
+}
+
+.visual_picture .img_box05 img {
+    position: absolute;
+    border-radius: 50%;
+    width: 12%;
+    top: 390rem;
+    right: 10%;
+
+}
+
+
+.visual_picture .img_box06 img {
+    position: absolute;
+    border-radius: 50%;
+    width: 8%;
+    top: 630rem;
+    right: 25%;
+    animation: rotate_image_main 24s linear infinite;
+}
+
+.visual_picture .img_box07 img {
+    position: absolute;
+    border-radius: 50%;
+    width: 7%;
+    top: 490rem;
+    left: 33%;
+
+}
+
+.visual_picture .img_box08 img {
+    position: absolute;
+    border-radius: 50%;
+    width: 9%;
+    top: 700rem;
+
+
+}
+
+.visual_picture .img_box09 img {
+    position: absolute;
+    border-radius: 50%;
+    width: 7%;
+    top: 390rem;
+    right: 28%;
+
+}
+
+.visual_picture .img_box10 img {
+    position: absolute;
+    border-radius: 50%;
+    width: 10%;
+    top: 670rem;
+    right: 10%;
+
+}
+
+@keyframes rotate_image_main {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
