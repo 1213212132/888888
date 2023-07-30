@@ -70,7 +70,13 @@ p {
 }
 
 .inner {
-    max-width: 1440px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.inner2 {
+    max-width: 600px;
     margin: 0 auto;
     padding: 0 15px;
 }
