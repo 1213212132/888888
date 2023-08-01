@@ -1,6 +1,3 @@
-/* * {
-    outline: 1px solid tomato;
-} */
 .wrap {
     font-family: 'Pretendard-Regular'
 }
@@ -10,7 +7,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 999;
+    z-index: 10000;
 
     background: linear-gradient(to bottom, #040404, rgba(4, 4, 4, 0.1));
     backdrop-filter: blur(10px);
@@ -41,17 +38,105 @@ header.on {
     background: url(../images/logo_w.svg) no-repeat;
 }
 
+
+
+
+/*세로운 메뉴바*/
+
+
+
+.header .lnb h1 {
+    border-bottom: 1px solid #ddd;
+}
+
+
+.header .lnb .logo {
+    position: fixed;
+    display: block;
+    width: 180rem;
+    height: 35rem;
+    background: url(../images/logo_b.svg) no-repeat;
+
+
+
+}
+
+
+.header .lnb {
+    opacity: 0;
+    position: fixed;
+    inset: 0 auto 100% 0;
+    background: #fff;
+    visibility: hidden;
+    height: 400rem;
+    width: 100%;
+
+
+}
+
+
+.header .lnb.on {
+    border-radius: 0 0 30% 30%;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+.header .lnb>ul {
+    display: flex;
+    gap: 209px;
+    justify-content: center;
+    padding-top: 30rem;
+
+
+}
+
+.header .lnb>ul>li>a {
+    display: block;
+
+    color: #030B16;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+
+.header .lnb>ul>li {
+    position: relative;
+    line-height: 30rem;
+}
+
+
+.header .lnb>ul>li .snb {
+
+    line-height: 2.5;
+    padding-top: 20rem;
+
+}
+
+.header .lnb>ul>li .snb a {
+    font-size: 20rem;
+    font-weight: 500;
+}
+
+
+/*   탑 햄버거 메뉴만들기 */
 .header .gnb {}
 
 .header .gnb>ul {
     display: flex;
     gap: 80rem;
+
+
 }
 
 .header .gnb>ul>li>a {
     display: block;
     font-size: 20rem;
     color: #fff;
+
 }
 
 .header .gnb>ul>li {
@@ -61,6 +146,7 @@ header.on {
 
 
 .header .gnb>ul>li .snb {
+
     /* position: absolute;
     top: 110rem;
 
@@ -75,41 +161,46 @@ header.on {
     text-align: center;
     width: 140px;
     position: absolute;
-    top: 90rem;
+    top: 110rem;
     left: -10rem;
     background: #8E72D8;
     border-radius: 10px;
     opacity: 0;
     visibility: hidden;
     padding: 26px;
+
 }
 
 .header .gnb>ul>li:hover .snb {
     /* transition: 0.4s;
     display: block; */
+
     opacity: 1;
     visibility: visible;
     transition: 0.4s;
 }
 
 .header .gnb>ul>li .snb a {
+
     display: block;
     color: #fff;
     font-size: 15rem;
     line-height: 30rem;
 }
 
-.header .login {
+.header .ham {
     display: flex;
     gap: 30rem;
 }
 
-.header .login a {
+.header .ham a {
     font-size: 15rem;
     color: #fff;
 }
 
 .hd__ham__btn {
+
+    z-index: 999;
     display: flex;
     align-items: center;
     height: 100%;
@@ -123,19 +214,29 @@ header.on {
 }
 
 .ham_btn {
+
     position: relative;
     width: 28rem;
     height: 22rem;
 }
+
+
 
 .ham_btn span {
     position: absolute;
     left: 0;
     width: 100%;
     height: 2rem;
-    background-color: #fff;
+    background: #fff;
     border-radius: 10rem;
 }
+
+.ham_btn.on span {
+
+
+    background: #000;
+}
+
 
 .ham_btn span:nth-of-type(1) {
     top: 0;
@@ -172,6 +273,324 @@ header.on {
     transform: translateY(-8rem) rotate(45deg);
 }
 
+
+
+@media (max-width :768px) {
+    .wrap {
+        font-family: 'Pretendard-Regular';
+        overflow: hidden;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10000;
+
+        background: linear-gradient(to bottom, #040404, rgba(4, 4, 4, 0.1));
+        backdrop-filter: blur(10px);
+    }
+
+    header.on {
+        background: rgba(4, 4, 4, 0.5);
+        transition: background-color 0.4s;
+    }
+
+    .header .inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100rem;
+    }
+
+
+    .header .logo {
+        display: block;
+        width: 180rem;
+        height: 44rem;
+        background: url(../images/logo_w.svg) no-repeat;
+        transition: 0.5s;
+    }
+
+    .header.on .logo {
+        background: url(../images/logo_w.svg) no-repeat;
+    }
+
+
+
+
+    /*세로운 메뉴바*/
+
+
+
+    .header .lnb h1 {
+        border-bottom: 1px solid #ddd;
+    }
+
+
+    .header .lnb .logo {
+        position: fixed;
+        display: block;
+        width: 180rem;
+        height: 35rem;
+        background: url(../images/logo_b.svg) no-repeat;
+
+
+
+    }
+
+
+    .header .lnb {
+        opacity: 0;
+        position: fixed;
+        inset: 0 auto 100% 0;
+        background: #fff;
+        visibility: hidden;
+        height: 400rem;
+        width: 100%;
+
+
+        /*r*/
+        position: fixed;
+        inset: 0 auto 0 100%;
+        height: 1200rem;
+        bottom: 505px;
+        width: 100%;
+
+        transition: 0.5s;
+    }
+
+
+    .header .lnb.on {
+        inset: 0 auto 0 0;
+        border-radius: 0 0 30% 30%;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header .lnb>ul>li .snb {
+
+
+        /* r */
+        position: static;
+        background: #fff;
+        padding: 0 0 0 0;
+    }
+
+
+
+    .header .lnb>ul {
+        display: flex;
+        gap: 209px;
+        justify-content: center;
+        padding-top: 30rem;
+
+        /* r */
+        flex-direction: column;
+        gap: 0;
+        padding: 150px 30px 0 30px;
+
+    }
+
+    .header .lnb>ul>li>a {
+        display: block;
+
+        color: #030B16;
+        font-size: 30px;
+        font-weight: 700;
+
+    }
+
+
+    .header .lnb>ul>li {
+        position: relative;
+        line-height: 30rem;
+
+        /* r */
+        line-height: 40px;
+    }
+
+
+    .header .lnb>ul>li .snb {
+
+        line-height: 2.5;
+        padding-top: 20rem;
+        display: none;
+        /* r */
+        position: static;
+        background: rgba(0, 0, 0, 1);
+        padding: 0 0 0 0;
+
+    }
+
+    .header .lnb>ul>li .snb a {
+        font-size: 20rem;
+        font-weight: 500;
+    }
+
+
+    /*   탑 햄버거 메뉴만들기 */
+    .header .gnb {}
+
+    .header .gnb>ul {
+        display: flex;
+        gap: 80rem;
+
+
+    }
+
+    .header .gnb>ul>li>a {
+        display: block;
+        font-size: 20rem;
+        color: #fff;
+
+
+
+    }
+
+    .header .gnb>ul>li {
+        position: relative;
+        line-height: 100rem;
+
+        /*r*/
+        display: none;
+    }
+
+
+    .header .gnb>ul>li .snb {
+
+        /* position: absolute;
+        top: 110rem;
+    
+        white-space: nowrap;
+        background: #8E72D8;
+        padding: 26rem;
+        text-align: center;
+        width: 120rem;
+        border-radius: 10rem;
+    
+        display: none; */
+        text-align: center;
+        width: 140px;
+        position: absolute;
+        top: 110rem;
+        left: -10rem;
+        background: #8E72D8;
+        border-radius: 10px;
+        opacity: 0;
+        visibility: hidden;
+        padding: 26px;
+
+    }
+
+    .header .gnb>ul>li:hover .snb {
+        /* transition: 0.4s;
+        display: block; */
+
+        opacity: 1;
+        visibility: visible;
+        transition: 0.4s;
+    }
+
+    .header .gnb>ul>li .snb a {
+
+        display: block;
+        color: #fff;
+        font-size: 15rem;
+        line-height: 30rem;
+    }
+
+    .header .ham {
+        display: flex;
+        gap: 30rem;
+    }
+
+    .header .ham a {
+        font-size: 15rem;
+        color: #fff;
+    }
+
+    .hd__ham__btn {
+
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .ham_btn,
+    .ham_btn span {
+        display: inline-block;
+        transition: all .4s;
+        box-sizing: border-box;
+    }
+
+    .ham_btn {
+
+        position: relative;
+        width: 28rem;
+        height: 22rem;
+    }
+
+
+
+    .ham_btn span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2rem;
+        background: #fff;
+        border-radius: 10rem;
+    }
+
+    .ham_btn.on span {
+
+
+        background: #000;
+    }
+
+
+    .ham_btn span:nth-of-type(1) {
+        top: 0;
+    }
+
+    .ham_btn span:nth-of-type(2) {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 65%;
+        left: auto;
+        right: 0;
+    }
+
+    .ham_btn span:nth-of-type(3) {
+        bottom: 0;
+    }
+
+
+
+
+
+
+    .ham_btn.on span:nth-of-type(1) {
+        -webkit-transform: translateY(12rem) rotate(-45deg);
+        transform: translateY(12rem) rotate(-45deg);
+    }
+
+    .ham_btn.on span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .ham_btn.on span:nth-of-type(3) {
+        -webkit-transform: translateY(-8rem) rotate(45deg);
+        transform: translateY(-8rem) rotate(45deg);
+    }
+
+
+
+
+
+}
 
 
 
@@ -354,8 +773,8 @@ header.on {
 .eclipse_box .scrolldown_icon .chevron {
     pointer-events: none;
     position: absolute;
-    bottom: 190rem;
-    width: 18rem;
+    bottom: 210rem;
+    width: 30rem;
     left: 50%;
     opacity: 1;
     transform: translateX(-50%);
@@ -428,7 +847,7 @@ header.on {
     position: relative;
     text-align: center;
 
-    top: 170rem;
+    top: 100rem;
 
 }
 
@@ -466,8 +885,9 @@ header.on {
     position: absolute;
     border-radius: 50%;
     width: 15%;
-    top: 600rem;
-    right: 780rem;
+    left: 43%;
+    top: 400rem;
+
 
 }
 
@@ -475,7 +895,7 @@ header.on {
     position: absolute;
     border-radius: 50%;
     width: 5%;
-    top: 600rem;
+    top: 400rem;
     left: 500rem;
     animation: rotate_image_main 24s linear infinite;
 }
@@ -484,7 +904,7 @@ header.on {
     position: absolute;
     border-radius: 50%;
     width: 10%;
-    top: 600rem;
+    top: 400rem;
 
 
 }
@@ -494,7 +914,7 @@ header.on {
     position: absolute;
     border-radius: 50%;
     width: 8%;
-    top: 830rem;
+    top: 630rem;
     left: 500rem;
     animation: rotate_image_main 24s linear infinite;
 }
@@ -503,7 +923,7 @@ header.on {
     position: absolute;
     border-radius: 50%;
     width: 12%;
-    top: 590rem;
+    top: 390rem;
     right: 10%;
 
 }
@@ -513,7 +933,7 @@ header.on {
     position: absolute;
     border-radius: 50%;
     width: 8%;
-    top: 830rem;
+    top: 630rem;
     right: 25%;
     animation: rotate_image_main 24s linear infinite;
 }
@@ -522,7 +942,7 @@ header.on {
     position: absolute;
     border-radius: 50%;
     width: 7%;
-    top: 690rem;
+    top: 490rem;
     left: 33%;
 
 }
@@ -531,7 +951,7 @@ header.on {
     position: absolute;
     border-radius: 50%;
     width: 9%;
-    top: 900rem;
+    top: 700rem;
 
 
 }
@@ -540,7 +960,7 @@ header.on {
     position: absolute;
     border-radius: 50%;
     width: 7%;
-    top: 590rem;
+    top: 390rem;
     right: 28%;
 
 }
@@ -549,7 +969,7 @@ header.on {
     position: absolute;
     border-radius: 50%;
     width: 10%;
-    top: 870rem;
+    top: 670rem;
     right: 10%;
 
 }
@@ -575,8 +995,8 @@ a.btn_wc {
     line-height: 56px;
     font-size: 22rem;
     color: #fff;
-    top: 1000rem;
-    left: 45%;
+    top: 750rem;
+    left: 46.5%;
     letter-spacing: 2px;
     z-index: 888;
     padding: 0 15rem;
@@ -618,6 +1038,65 @@ a.btn_wc:hover:before {
 }
 
 
+/*옆으로지나가는 애니메이션 공부 필요*/
+
+.wave .wave_wrap {
+    position: relative;
+    bottom: -750rem;
+    white-space: nowrap;
+    display: flex;
+    width: 200%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.wave .wave_wrap .wave_box {
+    width: 100%;
+}
+
+.wave .wave_wrap .wave_wrap02 {
+    padding-top: 60px;
+}
+
+.wave .wave__wrap .wave_item img {
+    opacity: 0.6;
+}
+
+
+.wave .wave_banner {
+    transition: .5s ease;
+    cursor: auto;
+    clear: both;
+    overflow: hidden;
+}
+
+.wave .wave_banner .wave_box {
+    overflow: hidden;
+    width: 100%;
+}
+
+.wave .wave_banner .wave_item {
+    cursor: default;
+    display: flex;
+    flex-direction: row;
+}
+
+.wave .wave_banner .wave_text {
+    width: auto;
+}
+
+.wave .wave_banner .wave_item {
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker3;
+    animation-duration: 80s;
+    -webkit-animation: ticker3 80s linear infinite;
+}
+
+.wave .wave_banner.reverse .wave_item {
+    animation-direction: reverse;
+}
+
 /**/
 
 .edu {}
@@ -654,7 +1133,7 @@ a.btn_wc:hover:before {
     position: relative;
     text-align: center;
 
-    top: -700rem;
+    top: -800rem;
     z-index: 99;
 
 }
@@ -688,7 +1167,7 @@ a.btn_wc:hover:before {
 .schedule {
     position: absolute;
     right: 345rem;
-    bottom: 350rem;
+    bottom: 400rem;
     z-index: 11;
 }
 
@@ -751,7 +1230,7 @@ a.btn_wc:hover:before {
 a.btn_wc02 {
 
     position: absolute;
-    display: inline-block;
+    display: block;
     width: 150px;
 
 
@@ -761,8 +1240,8 @@ a.btn_wc02 {
     line-height: 56px;
     font-size: 22rem;
     color: #fff;
-    top: 810rem;
-    left: 45%;
+    top: 750rem;
+    left: 46.5%;
     letter-spacing: 2px;
     z-index: 888;
     padding: 0 15rem;
@@ -1183,4 +1662,21 @@ a.pic_btn_wc:hover:before {
 
 .footer .call strong {
     font-weight: 700;
+}
+
+
+.footer .icon {
+    justify-content: center;
+    padding-top: 25rem;
+    padding-bottom: 25rem;
+    gap: 30rem;
+    display: flex;
+}
+
+.footer .copy {
+
+    text-align: center;
+
+    padding-top: 15rem;
+    border-top: 1px solid #9999;
 }

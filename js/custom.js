@@ -14,7 +14,7 @@ $(function () {
 
     $('.ham_btn').on('click', function () {
         $(this).toggleClass('on');
-        $(this).next().toggleClass('on');
+        $('.lnb').toggleClass('on');
     })
 
 
@@ -84,17 +84,27 @@ $(function () {
         $('.Gnb').toggleClass('on');
     });
 
-    $('.Gnb>ul>li>a').on('click', function (e) {
-        e.preventDefault();
-        $(this).next().stop().slideDown();
-        $(this).parent().siblings().find('.snb').stop().slideUp();
+    $('.lnb li>a').on('click', function (e) {
+        if ($('.lnb').hasClass('on')) {
+
+            //서버메뉴가 없으면 바로 클릭되게 하기
+            if ($(this).next().size() != 0) {
+                e.preventDefault();
+            }
+            $(this).next().stop().slideToggle();
+            $(this).parent().siblings().find('.snb').stop().slideUp();
+        }
     });
 
     $(window).on('resize', function () {
-        $('.Gnb .snb').removeAttr('style')
+        $('.lnb').removeClass('on')
+    });
+
+    $('.lnb').on('wheel', function (e) {
+        if ($('.lnb').hasClass('on')) {
+            e.preventDefault();
+        }
     })
-
-
 
 
 
