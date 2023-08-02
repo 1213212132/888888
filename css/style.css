@@ -1565,7 +1565,8 @@ a.btn_wc:hover:before {
         border-radius: 50rem;
 
         /*r*/
-        width: 25%;
+        left: 38%;
+        width: 26%;
         padding: 0;
     }
 
@@ -2038,7 +2039,7 @@ a.btn_wc02:hover:before {
         /*r*/
         font-size: 15rem;
         padding: 0;
-        top: 770rem;
+        top: 790rem;
         left: 37%;
         line-height: 40px;
         width: 28%;
