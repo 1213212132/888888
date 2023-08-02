@@ -1566,7 +1566,7 @@ a.btn_wc:hover:before {
 
         /*r*/
         left: 38%;
-        width: 26%;
+        width: 30%;
         padding: 0;
     }
 
@@ -2040,9 +2040,9 @@ a.btn_wc02:hover:before {
         font-size: 15rem;
         padding: 0;
         top: 790rem;
-        left: 37%;
+        left: 35%;
         line-height: 40px;
-        width: 28%;
+        width: 31%;
     }
 
 
@@ -2428,7 +2428,7 @@ a.pic_btn_wc:hover:before {
         top: 550rem;
         left: 37%;
         line-height: 40px;
-        width: 28%;
+        width: 31%;
     }
 
 
