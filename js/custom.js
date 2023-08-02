@@ -37,17 +37,65 @@ $(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
+        responsive: [ // 반응형 웹 구현 옵션
+            {
+                breakpoint: 960, //화면 사이즈 960px
+                settings: {
+                    //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 768, //화면 사이즈 768px
+                settings: {
+                    //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                    slidesToShow: 1
+                }
+            }
+        ]
 
     });
     $('.tv_slide').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
+        responsive: [ // 반응형 웹 구현 옵션
+            {
+                breakpoint: 960, //화면 사이즈 960px
+                settings: {
+                    //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 768, //화면 사이즈 768px
+                settings: {
+                    //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
     $('.social_slide').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
+        responsive: [ // 반응형 웹 구현 옵션
+            {
+                breakpoint: 960, //화면 사이즈 960px
+                settings: {
+                    //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 768, //화면 사이즈 768px
+                settings: {
+                    //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
 
@@ -90,6 +138,23 @@ $(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
+
+        responsive: [ // 반응형 웹 구현 옵션
+            {
+                breakpoint: 960, //화면 사이즈 960px
+                settings: {
+                    //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 768, //화면 사이즈 768px
+                settings: {
+                    //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                    slidesToShow: 1
+                }
+            }
+        ]
 
     });
 
