@@ -77,6 +77,24 @@ $(function () {
 
 
 
+    $('.arrows .left').on('click', function () {
+        $('.movie_slide').slick('slickPrev');
+    });
+    $('.arrows .right').on('click', function () {
+        $('.movie_slide').slick('slickNext');
+    });
+
+
+
+    $('.movie_slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+
+    });
+
+
+
 
 
     $('.mobile_btn').on('click', function () {
