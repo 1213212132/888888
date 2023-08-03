@@ -349,7 +349,9 @@ header.on {
         height: 35rem;
         background: url(../images/logo_b.svg) no-repeat;
 
-
+        /*r*/
+        position: relative;
+        bottom: -5rem;
     }
 
 
