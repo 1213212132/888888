@@ -319,6 +319,11 @@ header.on {
         height: 44rem;
         background: url(../images/logo_w.svg) no-repeat;
         transition: 0.5s;
+
+
+        /*R*/
+        position: relative;
+        bottom: -5rem;
     }
 
     .header.on .logo {
@@ -343,7 +348,6 @@ header.on {
         width: 180rem;
         height: 35rem;
         background: url(../images/logo_b.svg) no-repeat;
-
 
 
     }
