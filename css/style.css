@@ -2725,14 +2725,20 @@ a.pic_btn_wc:hover:before {
 
         /*r*/
         width: 100%;
+        height: 100%;
         left: 0.5%;
 
 
-        bottom: -70rem;
+        bottom: -100rem;
 
     }
 
-    .slick_section .movie_slide {}
+
+
+    .slick_section .movie_slide img {
+        width: 100%;
+        height: 300rem;
+    }
 
 
     .slick_section .arrows {
@@ -2747,6 +2753,7 @@ a.pic_btn_wc:hover:before {
 
 
         /*r*/
+        top: 25%;
         left: 50%;
     }
 
@@ -2978,16 +2985,19 @@ a.pic_btn_wc:hover:before {
 
 
     top: 3rem;
+    padding-top: 3%;
     left: 3%;
     line-height: 1.3;
 }
 
 .tap_on span {
+    padding-bottom: 10rem;
     font-size: 17rem;
+
 }
 
 .tap_on .data {
-
+    padding-top: 1%;
     color: #999999;
     font-size: 14rem;
 }
@@ -3139,7 +3149,7 @@ a.pic_btn_wc:hover:before {
 
         /*r*/
         width: 100%;
-        height: 350rem;
+        height: 300rem;
     }
 
 
@@ -3172,11 +3182,13 @@ a.pic_btn_wc:hover:before {
         width: 100%;
 
         /*r*/
+
         top: 55%;
         z-index: 9;
     }
 
     .arrows01 i {
+
         padding: 25rem;
 
         border-radius: 50%;
@@ -3186,7 +3198,7 @@ a.pic_btn_wc:hover:before {
         cursor: pointer;
         transition: 0.5s;
         /*r*/
-
+        display: none;
     }
 
     .arrows01 .left {
