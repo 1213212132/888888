@@ -404,7 +404,7 @@ header.on {
         /* r */
         flex-direction: column;
         gap: 0;
-        padding: 50px 30px 0 30px;
+        padding: 50px 30px 0 20px;
 
     }
 
@@ -415,6 +415,8 @@ header.on {
         font-size: 30px;
         font-weight: 700;
 
+        /*r*/
+        font-size: 25px;
     }
 
 
