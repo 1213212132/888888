@@ -98,7 +98,7 @@ header.on {
     display: block;
 
     color: #030B16;
-    font-size: 30px;
+    font-size: 29rem;
     font-weight: 700;
 
 }
@@ -118,8 +118,10 @@ header.on {
 }
 
 .header .lnb>ul>li .snb a {
+    display: block;
     font-size: 20rem;
     font-weight: 500;
+    padding: 0 0 0 1rem;
 }
 
 
@@ -416,7 +418,7 @@ header.on {
         font-weight: 700;
 
         /*r*/
-        font-size: 25px;
+        font-size: 20rem;
     }
 
 
@@ -426,7 +428,7 @@ header.on {
 
         /* r */
         border-bottom: 1px solid #eee;
-        line-height: 40px;
+        line-height: 40rem;
     }
 
 
