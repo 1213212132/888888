@@ -9,7 +9,7 @@
     left: 0;
     right: 0;
     z-index: 10000;
-
+    word-break: keep-all;
     background: linear-gradient(to bottom, #040404, rgba(4, 4, 4, 0.1));
     backdrop-filter: blur(10px);
 }
@@ -390,6 +390,7 @@ header.on {
         position: static;
         background: #fff;
         padding: 0 0 0 0;
+
     }
 
 
@@ -422,7 +423,7 @@ header.on {
         line-height: 30rem;
 
         /* r */
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid #eee;
         line-height: 40px;
     }
 
@@ -434,7 +435,6 @@ header.on {
         display: none;
         /* r */
         position: static;
-
         padding: 0 0 0 0;
 
     }
@@ -442,6 +442,12 @@ header.on {
     .header .lnb>ul>li .snb a {
         font-size: 20rem;
         font-weight: 500;
+
+        /*r*/
+        padding: 0 8rem;
+        font-weight: 300;
+        font-size: 16rem;
+
     }
 
 
@@ -2539,7 +2545,7 @@ a.pic_btn_wc:hover:before {
 
 .slick_section .arrows {
     position: absolute;
-    top: 59%;
+    top: 40%;
     left: 57%;
     transform: translate(-50%, -50%);
 
@@ -2620,7 +2626,8 @@ a.pic_btn_wc:hover:before {
 .slick_section .play_btn01 i {
     border: 1px solid #ddd;
     border-radius: 50rem;
-    padding: 20rem;
+    padding: 17rem 20rem 20rem 18rem;
+
 }
 
 
@@ -3250,7 +3257,7 @@ a.pic_btn_wc:hover:before {
 .footer .human li~li::after {
     content: "";
     position: absolute;
-    border-right: 1px solid #eee;
+    border-right: 1px solid #999999;
     left: 46.7%;
     width: 5rem;
     height: 13px;
@@ -3261,7 +3268,7 @@ a.pic_btn_wc:hover:before {
 .footer .human li~li::before {
     content: "";
     position: absolute;
-    border-right: 1px solid #eee;
+    border-right: 1px solid #999999;
     right: 45.5%;
     width: 5rem;
     height: 13px;

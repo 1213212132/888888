@@ -175,7 +175,7 @@ $(function () {
                 e.preventDefault();
             }
             $(this).next().stop().slideToggle();
-            $(this).parent().siblings().find('.snb').stop().slideUp();
+            $(this).parent().siblings().find('.lnb>ul>li .snb').stop().slideUp();
         }
     });
 
