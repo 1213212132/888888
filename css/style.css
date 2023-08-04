@@ -1113,7 +1113,7 @@ header.on {
 
 .space_list .space_tit {
 
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     color: #A58EE0;
     padding-bottom: 14px;
@@ -1130,7 +1130,8 @@ header.on {
 }
 
 .space_list .space_txt2 {
-    color: #dddddd;
+    font-family: 'Noto Sans KR';
+    color: #f9f9f9;
     font-size: 22px;
     font-weight: 400;
     padding-top: 30px;
