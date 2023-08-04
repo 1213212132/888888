@@ -2590,22 +2590,23 @@ a.pic_btn_wc:hover:before {
 .slick_section .play_btn i::after {
     content: '';
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 4%;
+    top: 5%;
     width: 0;
-    height: 100%;
+    right: 0%;
+    height: 87%;
     background: #fff;
 
-    z-index: 1;
-    border-radius: 50rem;
-
+    border-radius: 10%;
 
 }
 
 
 .slick_section .play_btn i:hover::after {
     z-index: -999;
-    width: 100%;
+    width: 90%;
+
+
 
 }
 
@@ -2617,17 +2618,14 @@ a.pic_btn_wc:hover:before {
     left: 1200px;
     top: 180rem;
 
-    font-size: 50rem;
+
 
 
 
 }
 
 .slick_section .play_btn01 i {
-    border: 1px solid #ddd;
-    border-radius: 50rem;
-    padding: 17rem 20rem 20rem 18rem;
-
+    font-size: 80px;
 }
 
 
@@ -2643,9 +2641,7 @@ a.pic_btn_wc:hover:before {
 }
 
 .slick_section .play_btn02 i {
-    border: 1px solid #ddd;
-    border-radius: 50rem;
-    padding: 20rem;
+    font-size: 80px;
 }
 
 
@@ -2663,9 +2659,7 @@ a.pic_btn_wc:hover:before {
 }
 
 .slick_section .play_btn03 i {
-    border: 1px solid #ddd;
-    border-radius: 50rem;
-    padding: 20rem;
+    font-size: 80px;
 }
 
 
