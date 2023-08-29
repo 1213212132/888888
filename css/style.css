@@ -164,7 +164,7 @@ header.on {
     text-align: center;
     width: 140px;
     position: absolute;
-    top: 110rem;
+    top: 95rem;
     left: -10rem;
     background: #8E72D8;
     border-radius: 10px;
@@ -2901,7 +2901,7 @@ a.pic_btn_wc:hover:before {
 
 .media_tap {
     position: relative;
-    height: 700rem;
+    padding-bottom: 50rem;
 }
 
 
